@@ -1,0 +1,17 @@
+{
+  "name": "fc_website",
+	"version": "1.0.0",
+	"description": "## Official Website of Finance Club BIT Mesra",
+	"main": "index.js",
+	"scripts": {
+		"client": "npm start --prefix ./client",
+		"server": "npm run start:dev --prefix ./server",
+		"dev": "concurrently 'npm run server' 'npm run client'"
+	},
+  "keywords": [],
+	"author": "",
+	"license": "ISC",
+  "dependencies": {
+    "concurrently": "^7.4.0"
+  }
+}
