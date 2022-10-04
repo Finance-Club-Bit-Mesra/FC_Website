@@ -6,7 +6,7 @@
 	"scripts": {
 		"client": "npm start --prefix ./client",
 		"server": "npm run start:dev --prefix ./server",
-		"dev": "concurrently 'npm run server' 'npm run client'"
+		"dev": "concurrently \"npm run server\" \"npm run client\""
 	},
   "keywords": [],
   "author": "",
