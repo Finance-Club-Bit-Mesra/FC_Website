@@ -1,7 +1,7 @@
-import express from "express";
-import mongoose from "mongoose";
-import dotenv from "dotenv";
-import cors from "cors";
+const express = require("express");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const cors = require("cors");
 
 dotenv.config();
 const app = express();
@@ -21,6 +21,10 @@ app.use((err, req, res, next) => {
     console.log(err);
     next();
 });
+
+//Routes
+app.use("/api/events" , require("./routes/events"));
+
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
